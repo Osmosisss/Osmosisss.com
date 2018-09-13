@@ -1,7 +1,6 @@
 .header-grid {
-  background-color: magenta;
   display: grid;
-  position: absolute;
+  position: fixed;
   grid-template-columns: 1fr 2fr;
   top: 0;
   width: 100vw;
@@ -23,4 +22,5 @@
 .header-links a {
   font-family: $primary-font;
   font-size: 1.4rem;
+  color: white;
 }

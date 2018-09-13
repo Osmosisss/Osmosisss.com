@@ -3,16 +3,15 @@ import React, { Component } from "react";
 class Header extends Component {
   render() {
     return (
-      <div className="header-wrapper">
-        <div className="logo-yo">
-          <img src="./assets/logo.png" alt="Osmosisss" />
+      <div className="header-grid">
+        <div className="header-logo">
+          <img src="assets/osmosisss_logo.png" alt="Osmosisss.com" />
         </div>
-        <div className="links-yo">
-          <ul className="links">
-            <li>Portfolio</li>
-            <li>About Me</li>
-            <li>Contact</li>
-          </ul>
+        <div className="header-links">
+          <a className="links">Home</a>
+          <a className="links">Music</a>
+          <a className="links">Art</a>
+          <a className="links">Support</a>
         </div>
       </div>
     );

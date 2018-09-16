@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import Header from "./header";
-import Footer from "./footer";
+import Logo from "./logo";
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <Footer />
+        <Logo />
       </div>
     );
   }

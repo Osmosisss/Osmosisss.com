@@ -1,0 +1,8 @@
+.footer-grid {
+  bottom: 0;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  height: 180px;
+}

@@ -1,7 +1,7 @@
 .header-grid {
   display: grid;
   position: fixed;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   top: 0;
   width: 100vw;
   height: 180px;
@@ -23,4 +23,8 @@
   font-family: $primary-font;
   font-size: 1.4rem;
   color: white;
+}
+
+.links a {
+  height: 100%;
 }

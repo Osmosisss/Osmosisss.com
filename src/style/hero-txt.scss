@@ -1,0 +1,30 @@
+.space {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 800px;
+  height: 300px;
+}
+
+.magictext .hardcoded {
+  position: relative;
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+.hardcoded {
+  color: white;
+  font-size: 2em;
+}
+
+.txt-rotate span {
+  text-align: center;
+  color: white;
+  font-family: $primary-font;
+}
+
+.magicspace {
+  margin-top: 5px;
+}

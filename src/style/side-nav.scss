@@ -5,8 +5,9 @@
   z-index: 2;
   right: 0;
   top: 50%;
+  margin-right: 10px;
   width: $element-height;
-  background: $nav-red;
+  background: #060000;
   font-weight: 300;
   @include border-radius(50px);
   @include transform(50%);
@@ -27,14 +28,14 @@
     height: $element-height;
     width: $element-height;
     margin-bottom: 5px;
-    color: white;
+    color: #f6f6f8;
     text-decoration: none;
     @include border-radius(50%);
     @include flex-center();
     @include transition($transition300);
     #{$rollover} {
       text-decoration: none;
-      background: rgba(black, 0.5);
+      background: rgba(#a15f3c, 0.3);
       @include transition($transition150);
       .quick-nav-title {
         opacity: 1;
@@ -52,7 +53,7 @@
     pointer-events: none;
     opacity: 0;
     font-size: 22px;
-    color: white;
+    color: #f6f6f8;
     text-align: right;
     padding: 2px 12px;
     position: absolute;

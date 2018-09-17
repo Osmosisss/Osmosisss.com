@@ -1,0 +1,94 @@
+.quick-nav {
+  font-family: $primary-font;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 50%;
+  width: $element-height;
+  background: $nav-red;
+  font-weight: 300;
+  @include border-radius(50px);
+  @include transform(50%);
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(center);
+  @include transition($transition300);
+  &:hover {
+    opacity: 0.9;
+    @include transition($transition150);
+  }
+  @media #{$screen-mobile} {
+    display: none;
+  }
+
+  &-item {
+    position: relative;
+    height: $element-height;
+    width: $element-height;
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    @include border-radius(50%);
+    @include flex-center();
+    @include transition($transition300);
+    #{$rollover} {
+      text-decoration: none;
+      background: rgba(black, 0.5);
+      @include transition($transition150);
+      .quick-nav-title {
+        opacity: 1;
+        right: 40px;
+        @include transition($transition150);
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-title {
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 22px;
+    color: white;
+    text-align: right;
+    padding: 2px 12px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    @include transform-all(translateY(-50%));
+    @include border-radius(50px);
+    @include transition($transition300);
+  }
+}
+
+//*** SCROLL TO TOP ***/
+.scroll-to-top {
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  outline: none;
+  border: none;
+  width: $element-height;
+  height: $element-height;
+  background: $nav-color;
+  color: white;
+  text-decoration: none;
+  @include flex-center();
+  @include border-radius(50% 50% 0 0);
+  @include transform-all(translateY(100%));
+  @include transition($transition300);
+  &.visible {
+    opacity: 0.25;
+    @include transform-all(translateY(0));
+  }
+  #{$rollover} {
+    opacity: 1;
+    text-decoration: none;
+    color: rgba(black, 0.9);
+  }
+}

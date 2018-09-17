@@ -1,0 +1,82 @@
+@mixin border-radius($b-rad...) {
+  -ms-border-radius: $b-rad;
+  -moz-border-radius: $b-rad;
+  -o-border-radius: $b-rad;
+  -webkit-border-radius: $b-rad;
+  -khtml-border-radius: $b-rad;
+  border-radius: $b-rad;
+}
+@mixin transition($transition...) {
+  -ms-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  -khtml-transition: $transition;
+  transition: $transition;
+}
+@mixin transform($transY...) {
+  -ms-transform: translateY(-$transY);
+  -moz-transform: translateY(-$transY);
+  -o-transform: translateY(-$transY);
+  -webkit-transform: translateY(-$transY);
+  -khtml-transform: translateY(-$transY);
+  transform: translateY(-$transY);
+}
+@mixin transform-all($transform...) {
+  -ms-transform: $transform;
+  -moz-transform: $transform;
+  -o-transform: $transform;
+  -webkit-transform: $transform;
+  -khtml-transform: $transform;
+  transform: $transform;
+}
+
+//*** MY FLEXBOX MIXINS ***/
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -webkit-flexbox;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin inline-flex() {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+@mixin align-items($align...) {
+  -webkit-align-items: $align;
+  align-items: $align;
+}
+@mixin justify-content($justify...) {
+  -webkit-justify-content: $justify;
+  justify-content: $justify;
+}
+@mixin flex-direction($flexDirection...) {
+  -webkit-flex-direction: $flexDirection;
+  flex-direction: $flexDirection;
+}
+@mixin flex-center() {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+}
+@mixin inline-flex-center() {
+  @include inline-flex();
+  @include align-items(center);
+  @include justify-content(center);
+}
+@mixin flex-between() {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(space-between);
+}
+@mixin inline-flex-between() {
+  @include inline-flexbox();
+  @include align-items(center);
+  @include justify-content(space-between);
+}

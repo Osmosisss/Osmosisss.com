@@ -1,1 +1,9 @@
-$primary-font: "Roboto", sans-serif;
+$primary-font: "Comfortaa", cursive;
+$nav-color: #e8e9ed;
+$nav-red: #a15f3c;
+
+$element-height: 40px;
+$transition150: all 150ms ease-in-out;
+$transition300: all 300ms ease-in-out;
+$screen-mobile: "only screen and (max-width : 767px)";
+$rollover: "&.active, &:active, &:hover, &:focus";

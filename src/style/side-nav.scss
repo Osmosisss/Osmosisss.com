@@ -35,7 +35,7 @@
     @include transition($transition300);
     #{$rollover} {
       text-decoration: none;
-      background: rgba(#a15f3c, 0.3);
+      background: rgba(#4a5613, 0.3);
       @include transition($transition150);
       .quick-nav-title {
         opacity: 1;

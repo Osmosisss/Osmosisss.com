@@ -4,7 +4,12 @@
 @import "./side-nav";
 @import "./home-pg";
 
-body {
+html {
   height: 100vh;
+  width: 100vw;
+}
+
+.page-wrapper {
+  height: 100vw;
   width: 100vw;
 }

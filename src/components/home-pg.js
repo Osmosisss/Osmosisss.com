@@ -1,11 +1,19 @@
 import React, { Component } from "react";
 import SideNav from "./side-nav";
 import Logo from "./logo";
+import $ from "jquery";
 
 class Home extends Component {
   render() {
+    $(function() {
+      $(".page-wrapepr").css({ height: $(window).height() });
+
+      $(window).bind("resize", function() {
+        $(".pagee-wrapper").css({ height: $(window).height() });
+      });
+    });
     return (
-      <div className="home-wrapper">
+      <div id="home" className="page-wrapper">
         <SideNav />
         <Logo />
       </div>

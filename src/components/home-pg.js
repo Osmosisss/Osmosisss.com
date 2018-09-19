@@ -5,7 +5,7 @@ import Logo from "./logo";
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="home-wrapper">
         <SideNav />
         <Logo />
       </div>

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Osmosis from "./osmosis";
+import Home from "./home-pg";
 
 export default class Osmosis extends Component {
   render() {
     return (
       <div>
-        <Osmosis />
+        <Home />
       </div>
     );
   }

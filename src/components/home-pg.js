@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import SideNav from "./side-nav";
 import Logo from "./logo";
 
-export default class App extends Component {
+class Home extends Component {
   render() {
     return (
       <div>
@@ -12,3 +12,5 @@ export default class App extends Component {
     );
   }
 }
+
+export default Home;

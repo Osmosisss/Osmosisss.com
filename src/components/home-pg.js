@@ -6,10 +6,10 @@ import $ from "jquery";
 class Home extends Component {
   render() {
     $(function() {
-      $(".page-wrapepr").css({ height: $(window).height() });
+      $(".page-wrapper").css({ height: $(window).height() });
 
       $(window).bind("resize", function() {
-        $(".pagee-wrapper").css({ height: $(window).height() });
+        $(".page-wrapper").css({ height: $(window).height() });
       });
     });
     return (

@@ -4,7 +4,7 @@ import Logo from "./logo";
 class About extends Component {
   render() {
     return (
-      <div className="page-wrapper">
+      <div id="about" className="page-wrapper">
         <Logo />
       </div>
     );

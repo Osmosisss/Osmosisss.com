@@ -9,6 +9,28 @@ export default class Osmosis extends Component {
   render() {
     return (
       <div>
+        <nav class="quick-nav">
+          <a class="quick-nav-item" href="#top">
+            <i class="fa fa-circle" />
+            <span class="quick-nav-title">Home</span>
+          </a>
+          <a class="quick-nav-item" href="#section1">
+            <i class="fa fa-circle" />
+            <span class="quick-nav-title">About</span>
+          </a>
+          <a class="quick-nav-item" href="#section2">
+            <i class="fa fa-circle" />
+            <span class="quick-nav-title">Art</span>
+          </a>
+          <a class="quick-nav-item" href="#section3">
+            <i class="fa fa-circle" />
+            <span class="quick-nav-title">Support</span>
+          </a>
+          <a class="quick-nav-item" href="#section4">
+            <i class="fa fa-circle" />
+            <span class="quick-nav-title">Contact</span>
+          </a>
+        </nav>
         <Home />
         <About />
         <Art />
